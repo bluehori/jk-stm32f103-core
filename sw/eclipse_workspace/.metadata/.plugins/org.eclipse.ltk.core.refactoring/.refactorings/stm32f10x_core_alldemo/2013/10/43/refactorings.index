@@ -1,0 +1,7 @@
+1382606667858	Rename resource 'startup_stm32f10x_cl.s'
+1382606670748	Rename resource 'startup_stm32f10x_hd.s'
+1382606673701	Rename resource 'startup_stm32f10x_ld_vl.s'
+1382606675889	Rename resource 'startup_stm32f10x_ld.s'
+1382606678186	Rename resource 'startup_stm32f10x_md_vl.s'
+1382606679951	Rename resource 'startup_stm32f10x_md.s'
+1382606681858	Rename resource 'startup_stm32f10x_xl.s'

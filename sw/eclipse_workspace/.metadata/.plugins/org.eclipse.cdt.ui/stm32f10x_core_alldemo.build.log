@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project stm32f10x_core_alldemo ****
+
+make all 
+Building file: D:/svn/google_code/jk-stm32f103-core/sw/lib/STM32_USB-FS-Device_Lib_V3.2.1/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/TrueSTUDIO/startup_stm32f10x_hd.S
+Invoking: GCC Assembler
+arm-none-eabi-as -mthumb -mcpu=cortex-m3 -o"CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/TrueSTUDIO/startup_stm32f10x_hd.o" "D:/svn/google_code/jk-stm32f103-core/sw/lib/STM32_USB-FS-Device_Lib_V3.2.1/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/TrueSTUDIO/startup_stm32f10x_hd.S"
+Finished building: D:/svn/google_code/jk-stm32f103-core/sw/lib/STM32_USB-FS-Device_Lib_V3.2.1/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/TrueSTUDIO/startup_stm32f10x_hd.S
+ 
+Building target: stm32f10x_core_alldemo.elf
+Invoking: Cross GCC Linker
+arm-none-eabi-gcc -L"C:\Program Files\CodeSourcery\Sourcery_CodeBench_Lite_for_ARM_EABI\arm-none-eabi\lib\thumb2" -T "D:/svn/google_code/jk-stm32f103-core/sw/all_demo/prj/GCC\stm32f103_ze_flash.ld" -mthumb -mcpu=cortex-m3 -Wl,-Map=linker.map -Wl,-cref -Wl,--gc-sections -o"stm32f10x_core_alldemo.elf"  ./hw_config.o ./led.o ./main.o ./newlib_stubs.o ./queue.o ./rtc.o ./stm32f10x_it.o ./timer.o ./usart.o ./usb_desc.o ./usb_istr.o ./usb_prop.o ./usb_pwr.o  ./STM32_USB-FS-Device_Driver/src/otgd_fs_cal.o ./STM32_USB-FS-Device_Driver/src/otgd_fs_dev.o ./STM32_USB-FS-Device_Driver/src/otgd_fs_int.o ./STM32_USB-FS-Device_Driver/src/otgd_fs_pcd.o ./STM32_USB-FS-Device_Driver/src/usb_core.o ./STM32_USB-FS-Device_Driver/src/usb_init.o ./STM32_USB-FS-Device_Driver/src/usb_int.o ./STM32_USB-FS-Device_Driver/src/usb_mem.o ./STM32_USB-FS-Device_Driver/src/usb_regs.o ./STM32_USB-FS-Device_Driver/src/usb_sil.o  ./STM32F10x_StdPeriph_Driver/src/misc.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_can.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.o ./STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.o  ./CMSIS/CM3/DeviceSupport/ST/STM32F10x/system_stm32f10x.o  ./CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/TrueSTUDIO/startup_stm32f10x_hd.o  ./CMSIS/CM3/CoreSupport/core_cm3.o   -lm
+Finished building target: stm32f10x_core_alldemo.elf
+ 
+make --no-print-directory post-build
+Bin Create
+arm-none-eabi-objcopy -S  -O binary  "stm32f10x_core_alldemo.elf" "stm32f10x_core_alldemo.bin"
+ 
